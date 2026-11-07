@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "CORNER",
+    "slug": "corner-fitness",
+    "scheme": "corner",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "plugins": ["expo-router"],
+    "experiments": { "typedRoutes": true },
+    "android": { "package": "com.teachzone.corner", "versionCode": 1, "adaptiveIcon": { "backgroundColor": "#111113" } },
+    "splash": { "backgroundColor": "#09090B" },
+    "assetBundlePatterns": ["**/*"]
+  }
+}
+
