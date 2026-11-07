@@ -449,3 +449,478 @@ button.secondary:hover {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* =====================================
+   CORNER DASHBOARD — PREMIUM 3D LAYOUT
+===================================== */
+
+.page-content {
+  max-width: 1250px;
+  margin: 55px auto 110px;
+  animation: slideUp .7s ease both;
+}
+
+.welcome {
+  margin-bottom: 35px;
+}
+
+.welcome h1 {
+  font-size: clamp(38px, 6vw, 68px);
+  font-weight: 900;
+  letter-spacing: -3px;
+  margin: 12px 0;
+}
+
+.welcome p,
+.glass-card p {
+  color: #969b91;
+  line-height: 1.8;
+}
+
+.eyebrow {
+  color: #b6ff45;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+/* DASHBOARD GRID */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.today-card {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.today-card .hero-title {
+  font-size: clamp(27px, 3vw, 42px);
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  margin: 12px 0;
+}
+
+.today-card .start {
+  align-self: flex-start;
+  margin-top: 22px;
+}
+
+.stat-card {
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.big-number {
+  color: #b6ff45;
+  font-size: 65px;
+  font-weight: 900;
+  letter-spacing: -4px;
+  text-shadow: 0 0 30px #b6ff4530;
+  margin: 12px 0;
+}
+
+/* SECTION HEADINGS */
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+.section-heading h2,
+.glass-card h2 {
+  font-size: 23px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.text-button {
+  background: transparent;
+  color: #b6ff45;
+  border: none;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+/* WEEKLY PLAN */
+
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+}
+
+.week-day {
+  background: rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 15px;
+  padding: 20px 8px;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  color: #92978e;
+  transition: .3s ease;
+}
+
+.week-day:hover,
+.active-day {
+  border-color: #b6ff45;
+  background: rgba(182,255,69,.09);
+  color: white;
+  transform: translateY(-4px);
+}
+
+.week-dot {
+  color: #b6ff45;
+  font-size: 19px;
+}
+
+.week-day small {
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+/* SHORTCUTS */
+
+.shortcut-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.shortcut {
+  padding: 25px;
+  text-align: left;
+  display: grid;
+  gap: 14px;
+  color: white;
+  background: rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 17px;
+  transition: .3s ease;
+}
+
+.shortcut:hover {
+  transform: translateY(-7px);
+  border-color: #b6ff45;
+  box-shadow: 0 15px 40px #b6ff4515;
+}
+
+.shortcut span {
+  color: #b6ff45;
+  font-size: 30px;
+}
+
+.shortcut small {
+  color: #b6ff45;
+  letter-spacing: 1px;
+}
+
+/* BOTTOM NAVIGATION */
+
+.bottom-nav {
+  position: fixed;
+  z-index: 100;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 22px;
+  background: rgba(12,15,11,.85);
+  backdrop-filter: blur(25px);
+  box-shadow: 0 15px 60px #000;
+}
+
+.nav-item {
+  min-width: 85px;
+  padding: 10px;
+  border: none;
+  border-radius: 13px;
+  background: transparent;
+  color: #858b80;
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  transition: .3s ease;
+}
+
+.nav-item span {
+  font-size: 22px;
+}
+
+.nav-item small {
+  font-size: 10px;
+}
+
+.nav-active {
+  color: #b6ff45;
+  background: rgba(182,255,69,.1);
+}
+
+/* EXERCISE LIBRARY */
+
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.exercise-card h3 {
+  font-size: 21px;
+  margin: 12px 0;
+}
+
+.exercise-card .start {
+  margin-top: 20px;
+}
+
+.exercise-symbol {
+  color: #b6ff45;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.exercise-meta {
+  color: #b6ff45;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+/* INPUTS */
+
+.search-input {
+  width: 100%;
+  padding: 17px 20px;
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 13px;
+  background: rgba(255,255,255,.05);
+  color: white;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.search-input:focus {
+  border-color: #b6ff45;
+  box-shadow: 0 0 20px #b6ff4515;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.category {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.12);
+  color: #aaa;
+  padding: 11px 17px;
+  border-radius: 30px;
+}
+
+.selected-category {
+  background: #b6ff45;
+  color: #080808;
+  border-color: #b6ff45;
+}
+
+/* CALENDAR */
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.calendar-label {
+  color: #b6ff45;
+  font-weight: 800;
+  padding: 12px;
+}
+
+.calendar-day {
+  padding: 16px 5px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.04);
+}
+
+.calendar-complete {
+  background: rgba(182,255,69,.18);
+  color: #b6ff45;
+}
+
+.calendar-today {
+  border: 1px solid #b6ff45;
+}
+
+/* HISTORY AND PROFILE */
+
+.history-row {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 17px 0;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.history-row div {
+  display: grid;
+  gap: 6px;
+}
+
+.history-row small {
+  color: #858b80;
+}
+
+.history-check {
+  color: #b6ff45;
+  font-size: 23px;
+}
+
+.avatar,
+.finish-symbol {
+  width: 75px;
+  height: 75px;
+  display: grid;
+  place-items: center;
+  border-radius: 22px;
+  color: #b6ff45;
+  font-size: 32px;
+  font-weight: 900;
+  background: rgba(182,255,69,.1);
+  border: 1px solid #b6ff4540;
+  margin-bottom: 20px;
+}
+
+.profile-label {
+  display: block;
+  margin: 20px 0 10px;
+  color: #b6ff45;
+}
+
+.disclaimer {
+  font-size: 11px;
+  margin-top: 15px;
+}
+
+/* WORKOUT TIMER */
+
+.workout-panel {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.timer-display {
+  font-size: clamp(70px, 13vw, 120px);
+  font-weight: 900;
+  color: #b6ff45;
+  text-align: center;
+  margin: 45px 0;
+  text-shadow: 0 0 35px #b6ff4530;
+}
+
+.workout-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.modification {
+  background: rgba(182,255,69,.045);
+  border: 1px solid rgba(182,255,69,.12);
+  border-radius: 15px;
+  padding: 18px;
+  margin-top: 15px;
+}
+
+.modification strong {
+  color: #b6ff45;
+}
+
+.workout-finish {
+  text-align: center;
+  padding: 70px 30px;
+}
+
+.workout-finish .finish-symbol {
+  margin: 0 auto 25px;
+}
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .today-card {
+    grid-column: 1 / -1;
+  }
+
+  .exercise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .page-content {
+    margin-top: 40px;
+  }
+
+  .dashboard-grid,
+  .exercise-grid,
+  .shortcut-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .week-grid {
+    gap: 5px;
+  }
+
+  .week-day {
+    padding: 13px 3px;
+    font-size: 11px;
+  }
+
+  .bottom-nav {
+    width: calc(100% - 20px);
+    justify-content: space-around;
+    bottom: 10px;
+  }
+
+  .nav-item {
+    min-width: 0;
+    flex: 1;
+    padding: 9px 3px;
+  }
+
+  .nav-item small {
+    font-size: 9px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+  }
+}
