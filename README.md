@@ -1,6 +1,6 @@
 # CORNER
 
-CORNER is an Android-first Expo and React Native fitness companion built around comfortable home movement, recovery, local session tracking, and vegetarian food ideas.
+CORNER is SIU an Android-first Expo and React Native fitness companion built around comfortable home movement, recovery, local session tracking, and vegetarian food ideas.
 
 ## Current implementation
 
